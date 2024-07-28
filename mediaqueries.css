@@ -1,0 +1,169 @@
+@media (max-width: 1190px) {
+  .hero-info img {
+    display: none;
+  }
+  .hero-info-title {
+    padding: 40px;
+  }
+  .hero-info-title h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1150px) {
+  .category {
+    font-size: 10px;
+    padding: 2px 5px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    display: flex;
+    padding-right: 10px;
+    justify-content: end;
+    gap: 10px;
+  }
+
+  .cart-icon {
+    border: 0px solid;
+  }
+
+  .navbar-list {
+    position: absolute;
+    top: 200px;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    flex-direction: column;
+    color: black;
+    background-color: rgb(255, 247, 247);
+    border: 2px solid black;
+    border-top: 0px;
+    border-radius: 0px 0px 15px 15px;
+    align-items: flex-start;
+    padding: 45px 30px;
+    gap: 25px;
+    z-index: 2;
+    display: none;
+  }
+
+  .navbar-list a {
+    color: black;
+    font-size: 18px;
+  }
+
+  .menu-label {
+    display: flex;
+    order: 2;
+    cursor: pointer;
+  }
+
+  .menu-label img {
+    height: 20px;
+    width: 25px;
+  }
+
+  .open-menu {
+    display: flex;
+  }
+
+  .aboutUs-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 815px){
+  .category{
+    display: none;
+  }
+  #register-form p{
+    font-size: 20px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo {
+    width: 150px;
+  }
+  .hero-info {
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+  }
+  .hero-info h1 {
+    font-size: 30px;
+  }
+  .hero-info p {
+    font-size: 15px;
+  }
+  .enlace {
+    display: none;
+  }
+
+  #sobre-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 25px;
+    margin: 30px 0px 30px 0px;
+  }
+  .container h4 {
+    font-size: 20px;
+  }
+  .container p,
+  span {
+    font-size: 10px;
+  }
+
+  #product h2 {
+    font-size: 25px;
+  }
+
+  .container-product img {
+    width: 150px;
+    height: 100px;
+  }
+  .container-product h4 {
+    font-size: 10px;
+  }
+  .divider-card {
+    display: none;
+  }
+  .card-product {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 150px;
+    width: 300px;
+  }
+  .container-price {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-price h4 {
+    font-size: 15px;
+  }
+  .category {
+    font-size: 10px;
+  }
+  .footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}

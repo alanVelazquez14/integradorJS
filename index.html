@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
+    <link rel="stylesheet" href="./animaciones.css" />
+    <script
+      src="https://kit.fontawesome.com/e526034a29.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Universidad Innova</title>
+  </head>
+  <body>
+    <header>
+      <img src="img/logo-innova.png" alt="Logo Innova" class="logo" />
+      <nav class="navbar">
+        <div class="menu-label">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="navbar-list">
+          <li><a href="#hero" class="navbar-link">Inicio</a></li>
+          <li><a href="#sobre-nosotros" class="navbar-link">Conocenos</a></li>
+          <li><a href="#product" class="navbar-link">Cursos</a></li>
+          <li><a href="#register-form" class="navbar-link">Contactanos</a></li>
+          <li><a href="#" class="navbar-link">Campus</a></li>
+        </ul>
+
+        <div class="cart-label">
+          <i class="fa-solid fa-cart-shopping cart-icon">
+            <div class="cart-bubble"></div>
+          </i>
+        </div>
+        <div class="cart-fav">
+          <h2>Carrito de compras</h2>
+          <div class="fav-container">
+            <!-- CARRITO DE PRODUCTOS -->
+          </div>
+          <span class="divider"></span>
+          <div class="cart-total">
+            <p>Total:</p>
+            <span class="total"></span>
+          </div>
+          <div class="btn-cart">
+            <button class="btn-buy">Comprar</button>
+            <button class="btn-delete">Vaciar carrito</button>
+          </div>
+        </div>
+      </nav>
+      <div class="overlay"></div>
+    </header>
+    <div class="msg-alert">
+      <!-- mensajes de comprar o borrar carrito -->
+    </div>
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-info">
+          <div class="hero-info-container">
+            <div class="hero-info-title">
+              <h1>
+                Explora, aprende y crece con nuestra plataforma educativa.
+              </h1>
+              <p>
+                En <span>UniversidadInnova</span>, estamos comprometidos con la
+                excelencia educativa y el desarrollo personal a través del
+                aprendizaje en línea. Desde nuestro inicio, nos hemos dedicado a
+                proporcionar cursos innovadores que empoderan a nuestros
+                estudiantes para alcanzar sus objetivos profesionales y
+                personales.
+              </p>
+            </div>
+            <img src="img/hero/fondo-hero.jpg" alt="" />
+          </div>
+          <a href="#info" class="enlace">Ver más</a>
+        </div>
+      </section>
+      <section class="aboutUs" id="sobre-nosotros">
+        <h2>Sobre nosotros</h2>
+        <div class="aboutUs-container">
+          <div class="container">
+            <h4>Nuestros valores</h4>
+            <p>
+              <span>Calidad:</span> Nos esforzamos por ofrecer cursos de alta
+              calidad que cumplen con los estándares educativos más exigentes.
+              <span>Accesibilidad:</span> Creemos en hacer que el conocimiento
+              sea accesible para todos, sin importar su ubicación geográfica o
+              circunstancias.
+            </p>
+          </div>
+          <div class="container">
+            <h4>Por qué elegirnos?</h4>
+            <p>
+              <span>Experiencia Educativa:</span> Aprovecha nuestra experiencia
+              y conocimiento para avanzar en tu carrera y expandir tus
+              habilidades. <span>Flexibilidad:</span> Aprende a tu propio ritmo
+              con acceso ilimitado a nuestros cursos en cualquier momento y
+              desde cualquier lugar.
+            </p>
+          </div>
+          <div class="container">
+            <h4>Nuestra visión</h4>
+            <p>
+              Ser la plataforma educativa líder a nivel global, reconocida por
+              ofrecer experiencias de aprendizaje en línea de calidad que
+              transforman vidas y fomentan el crecimiento continuo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--------------- CURSOS -------------->
+      <section id="product">
+        <h2>Nuestros Cursos Online</h2>
+        <div class="categories">
+          <button class="category active">Todas</button>
+          <button class="category" data-category="Informática">
+            Informática
+          </button>
+          <button class="category" data-category="Negocios">Negocios</button>
+          <button class="category" data-category="Arte">Arte</button>
+          <button class="category" data-category="Desarrollo Personal">
+            Desarrollo Personal
+          </button>
+        </div>
+        <div class="container-product">
+          <!-- cursos -->
+        </div>
+        <button class="btn-load">Ver más</button>
+        <div class="add-modal"></div>
+      </section>
+      <form class="form__container" id="register-form" novalidate>
+        <p class="form__title">
+          ¿Querés recibir información sobre Universidad Innova?
+          <b>Ingresá tus datos!</b>
+        </p>
+        <!-- Nombre -->
+        <div class="form__field">
+          <input
+            type="text"
+            placeholder="Nombre"
+            class="form__input"
+            id="name"
+            autocomplete="off"
+          />
+          <small></small>
+        </div>
+        <!-- Nombre -->
+
+        <!-- Apellido -->
+        <div class="form__field">
+          <input
+            type="text"
+            placeholder="Apellido"
+            class="form__input"
+            id="lastName"
+            autocomplete="off"
+          />
+          <small></small>
+        </div>
+        <!-- Apellido -->
+
+        <!-- Email -->
+        <div class="form__field">
+          <input
+            type="email"
+            placeholder="Email"
+            class="form__input"
+            id="email"
+            autocomplete="off"
+          />
+          <small></small>
+        </div>
+        <!-- Email -->
+        <!-- Telefono -->
+        <div class="form__field">
+          <input
+            type="text"
+            placeholder="Telefono"
+            class="form__input"
+            id="phone"
+            autocomplete="off"
+          />
+          <small></small>
+        </div>
+        <!-- Telefono -->
+        <input type="submit" class="form__submit__btn" value="Registrarse" />
+      </form>
+    </main>
+    <footer id="footer" class="footer">
+      <div class="footer-container">
+        <div class="footer-img">
+          <img src="img/logo-innova.png" alt="" />
+          <h2>UniversidadInnova</h2>
+        </div>
+        <div class="links">
+          <a>Políticas de privacidad</a>
+          <a>Aviso legal</a>
+          <a>Terminos y condiciones</a>
+        </div>
+      </div>
+      <div class="footer-p">
+        <p>Hecho por Alan Velazquez</p>
+        <p>&copy; 2024 UniversidadInnova. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <script src="./assets/formulario/register.js"></script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
