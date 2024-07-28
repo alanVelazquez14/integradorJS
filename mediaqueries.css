@@ -85,7 +85,34 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 715px){
+  .hero-info-title h1{
+    font-size: 35px;
+  }
+  .hero-info-title p{
+    font-size: 15px;
+  }
+  .enlace{
+    font-size: 15px;
+  }
+  .logo{
+    width: 170px;
+  }
+}
+
+@media(max-width: 570px){
+  .footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-img{
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
   .logo {
     width: 150px;
   }
