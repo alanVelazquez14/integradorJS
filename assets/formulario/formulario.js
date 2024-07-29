@@ -169,7 +169,7 @@ const validateForm = (e) => {
   }
 };
 
-const init2 = () => {
+export const register = () => {
   registerForm.addEventListener("submit", validateForm);
   nameInput.addEventListener("input", () => checkTextInput(nameInput));
   lastNameInput.addEventListener("input", () => checkTextInput(lastNameInput));
@@ -177,4 +177,3 @@ const init2 = () => {
   phoneInput.addEventListener("input", () => checkPhone(phoneInput));
 };
 
-init2();
