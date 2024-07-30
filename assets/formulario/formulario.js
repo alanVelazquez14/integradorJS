@@ -62,8 +62,8 @@ const showSuccess = (input) => {
 //Función para validar un input de tipo texto
 const checkTextInput = (input) => {
   let valid = false;
-  minCharacteres = 3;
-  maxCharacteres = 25;
+  let minCharacteres = 3;
+  let maxCharacteres = 25;
 
   if (isEmpty(input)) {
     showError(input, "Este campo es obligatorio");
