@@ -70,7 +70,7 @@ const checkTextInput = (input) => {
     return;
   }
 
-  if (!isBetween(input, minCharacteres, maxCharacteres)) {
+  if (!isBetween(input, 3, 25)) {
     showError(
       input,
       `Este campo debe tener entre ${minCharacteres} y ${maxCharacteres} caracteres`
