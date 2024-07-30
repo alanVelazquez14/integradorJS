@@ -33,12 +33,6 @@ const isExistingEmail = (input) => {
   return users.some((user) => user.email === input.value.trim());
 };
 
-//Funcion para validar pass
-const isPassValid = (input) => {
-  const regex =
-    /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,}$/;
-  return regex.test(input.value.trim());
-};
 
 //Funcion para validar Numero
 const isPhoneValid = (input) => {
@@ -105,25 +99,6 @@ const checkEmail = (input) => {
     return;
   }
 
-  showSuccess(input);
-  valid = true;
-  return valid;
-};
-
-//Funcion para validar Password
-const checkPass = (input) => {
-  let valid = false;
-  if (isEmpty(input)) {
-    showError(input, "La password es obligatoria");
-    return;
-  }
-  if (!isPassValid(input)) {
-    showError(
-      input,
-      "La password debe tener al menos 8 caracteres, una mayuscula, una minuscula y un simbolo"
-    );
-    return;
-  }
   showSuccess(input);
   valid = true;
   return valid;
